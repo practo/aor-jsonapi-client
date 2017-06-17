@@ -5,6 +5,7 @@
   "main": "./build/restClient.js",
   "scripts": {
     "build": "babel --presets es2015 src --out-dir build",
+    "prepare": "npm run build",
     "test": "echo \\\\\\\"Error: no test specified\\\\\\\" && exit 1"
   },
   "repository": {
