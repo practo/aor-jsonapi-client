@@ -1,17 +1,16 @@
 # JSON API REST client for Admin-on-rest.
-A JSONAPI compatible adapter for Admin-on-REST that allows for rapidly building admin interfaces in React using the AOR framework.
+This is custom implementation of JSON API REST client forked from (https://github.com/moonlight-labs/aor-jsonapi-client).
 
 ## Installation
 
-Aor-jsonapi-client is available from npm. You can install it (and its required dependencies)
-using:
+The library can be installed using:
 
 ```sh
-npm install --save-dev aor-jsonapi-client
+npm install git+https://github.com/practo/aor-jsonapi-client.git
 ```
 It can also be installed using yarn:
 ```sh
-yarn add aor-jsonapi-client
+yarn add git+https://github.com/practo/aor-jsonapi-client.git
 ```
 
 ## Usage
@@ -32,6 +31,3 @@ const App = () => (
 
 export default App;
 ```
-
-## Roadmap
-
