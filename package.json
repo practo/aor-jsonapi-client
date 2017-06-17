@@ -2,12 +2,9 @@
   "name": "aor-jsonapi-client",
   "version": "0.1.15",
   "description": "JSON API REST Client for Admin-on-rest",
-  "main": "./src/restClient.js",
+  "main": "./build/restClient.js",
   "scripts": {
-    "babel1": "babel --presets es2015 src/restClient.js -o build/restClient.js",
-    "babel2": "babel --presets es2015 src/fetch.js -o build/fetch.js",
-    "babel3": "babel --presets es2015 src/types.js -o build/types.js",
-    "babel4": "babel --presets es2015 src/HttpError.js -o build/HttpError.js",
+    "build": "babel --presets es2015 src --out-dir build",
     "test": "echo \\\\\\\"Error: no test specified\\\\\\\" && exit 1"
   },
   "repository": {
