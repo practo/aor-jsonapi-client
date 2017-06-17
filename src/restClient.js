@@ -28,8 +28,8 @@ export default (apiUrl, httpClient = jsonApiHttpClient) => {
             const { field, order } = params.sort;
             const { name, value } = params.filter;
             var query = {
-                'page[offset]': (page - 1) * perPage,
-                'page[limit]': perPage, 
+                'page[size]': perPage,
+                'page[number]': page,
             };
             Object.keys(params.filter).forEach(key =>{
                 var filterField = 'filter[' + key +']';
